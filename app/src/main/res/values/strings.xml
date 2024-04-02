@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">InstaSleb</string>
+    <string name="MainQns">Are U 14 Years Or Older?</string>
+    <string name="declaration">By Clicking Continue, I \nAgree That I Am At Least\n 14 Years Old</string>
 </resources>
