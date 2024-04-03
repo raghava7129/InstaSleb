@@ -62,24 +62,25 @@
             app:srcCompat="@drawable/dialog_box_bg" />
 
         <LinearLayout
+            android:id="@+id/boxLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="2dp">
+            android:padding="1dp">
 
             <TextView
+                android:id="@+id/ConfirmationQns"
                 android:layout_width="wrap_content"
                 android:layout_height="0dip"
                 android:layout_margin="3dp"
+                android:paddingLeft="8dp"
                 android:layout_weight="0.4"
-                android:fontFamily="casual"
+
+                android:gravity="center"
+                android:fontFamily="sans-serif-black"
                 android:text="@string/declaration"
                 android:textColor="#FBF6F6"
                 android:textSize="18sp"
@@ -182,7 +183,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintHeight_percent="0.6"
-        android:layout_marginBottom="-30dp"
+        android:layout_marginBottom="-35dp"
         app:srcCompat="@drawable/terms_1" />
 
 
