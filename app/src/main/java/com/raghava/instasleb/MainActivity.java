@@ -71,12 +71,15 @@ public class MainActivity extends AppCompatActivity {
         DisplayMetrics displayMetrics = baseContext.getResources().getDisplayMetrics();
         Configuration configuration = baseContext.getResources().getConfiguration();
 
+        configuration.fontScale = 1.0f;
+
         if (displayMetrics.densityDpi != DisplayMetrics.DENSITY_DEVICE_STABLE) {
             configuration.densityDpi = DisplayMetrics.DENSITY_DEVICE_STABLE;
             newContext = baseContext.createConfigurationContext(configuration);
         } else {
             newContext = baseContext;
         }
+
         super.attachBaseContext(newContext);
     }
 
